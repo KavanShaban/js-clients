@@ -118,8 +118,8 @@ const processResult = <SchemaT, Action extends AnyActionFunction>(
   }
 
   if (isBulk) {
-    return { ...result, error, handles } as EnqueueHookState<SchemaT, Action>;
+    return { ...result, error, handles } as unknown as EnqueueHookState<SchemaT, Action>;
   } else {
-    return { ...result, error, handle } as EnqueueHookState<SchemaT, Action>;
+    return { ...result, error, handle } as unknown as EnqueueHookState<SchemaT, Action>;
   }
 };
