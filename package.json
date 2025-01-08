@@ -19,7 +19,8 @@
     "watch:react": "pnpm --filter=@gadgetinc/react watch",
     "test": "NODE_OPTIONS=\"--max-old-space-size=4096 --stack-trace-limit=1000 --experimental-vm-modules\" TZ=UTC jest",
     "check-dependency-versions": "./scripts/check-dependency-versions.ts",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "remNode": "rm -rf yarn.lock pnpm-lock.yaml package-lock.json yarn-lock.yaml node_modules **/node_modules **/*/node_modules"
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.15.1",
@@ -65,6 +66,5 @@
     "patchedDependencies": {
       "@n1ru4l/push-pull-async-iterable-iterator@3.2.0": "patches/@n1ru4l__push-pull-async-iterable-iterator@3.2.0.patch"
     }
-  },
-  "packageManager": "pnpm@8.15.4+sha256.cea6d0bdf2de3a0549582da3983c70c92ffc577ff4410cbf190817ddc35137c2"
+  }
 }
