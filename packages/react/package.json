@@ -6,6 +6,7 @@
     "dist/**/*",
     "auto/**/*"
   ],
+  "description": "KJS PATCH PACKAGE",
   "license": "MIT",
   "repository": "github:gadget-inc/js-clients",
   "homepage": "https://github.com/gadget-inc/js-clients/tree/main/packages/react",
