@@ -25,3 +25,7 @@ export * from "./useList.js";
 export * from "./useMaybeFindFirst.js";
 export * from "./useMaybeFindOne.js";
 export * from "./useTable.js";
+export * from "./metadata.js"
+export * from "./useSelectedRecordsController.js"
+export * from "./useDebouncedSearch.js"
+export * as utils from "./utils.js";
